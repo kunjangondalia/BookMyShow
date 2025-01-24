@@ -5,4 +5,6 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class User extends BaseModel{
+    String name;
+    String email;
 }

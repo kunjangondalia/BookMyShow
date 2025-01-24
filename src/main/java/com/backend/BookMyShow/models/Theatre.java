@@ -2,18 +2,23 @@ package com.backend.BookMyShow.models;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
 @Entity
+@Getter
+@Setter
 public class Theatre extends BaseModel{
 
-    String name;
-    String address;
-    int rating;
+    private String name;
+    private String address;
+    private int rating;
     @OneToMany
-    List<Screen> screens;
-    @OneToMany
-    List<Movie> movies;
+    private List<Screen> screens;
+    @ManyToOne
+    private Region region;
 }
