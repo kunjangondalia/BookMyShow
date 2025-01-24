@@ -1,4 +1,5 @@
 package com.backend.BookMyShow.models;
 
-public class PaymentStatus {
+public enum PaymentStatus {
+    FAILED, PENDING, SUCCESSFUL
 }

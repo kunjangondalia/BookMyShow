@@ -2,12 +2,18 @@ package com.backend.BookMyShow.models;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-public class Seat {
+@Getter
+@Setter
+public class Seat extends BaseModel{
 
-    String name;
-    int row;
-    int col;
-    SeatType seatType;
+    private String seatNumber;
+    private int rowVal;
+    private int columnVal;
+    @ManyToOne
+    private SeatType seatType;
 }

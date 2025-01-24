@@ -1,16 +1,17 @@
 package com.backend.BookMyShow.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 public class ShowSeat extends BaseModel{
-    @OneToOne
-    Show show;
-    @OneToOne
-    Seat seat;
+    @ManyToOne
+    private Show show;
+    @ManyToOne
+    private Seat seat;
     @Enumerated(EnumType.ORDINAL)
-    ShowSeatStatus showSeatStatus;
+    private ShowSeatStatus showSeatStatus;
 }

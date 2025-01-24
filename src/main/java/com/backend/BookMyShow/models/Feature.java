@@ -1,6 +1,6 @@
 package com.backend.BookMyShow.models;
 
 
-public enum ScreenFeature {
+public enum Feature {
      DOLBYATOS, TWO_D, THREE_D
 }

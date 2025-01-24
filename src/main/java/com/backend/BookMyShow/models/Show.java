@@ -1,20 +1,29 @@
 package com.backend.BookMyShow.models;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 import java.util.List;
 
-@Entity
+@Entity(name = "shows")
+@Getter
+@Setter
 public class Show extends BaseModel{
-    Date time;
-    @OneToOne
-    Movie movie;
-    @OneToOne
-    Theatre theatre;
-    @OneToOne
-    Screen Screen;
-    List<ShowSeat> showSeatList;
-    List<ShowSeatType> showSeatTypes;
+    private Date time;
+    private int duration;
+    private Language language;
+    @ManyToOne
+    private Movie movie;
+    @ManyToOne
+    private Theatre theatre;
+    @ManyToOne
+    private Screen Screen;
+    @OneToMany
+    private List<ShowSeat> showSeatList;
+    @OneToMany
+    private List<ShowSeatType> showSeatTypes;
 }
