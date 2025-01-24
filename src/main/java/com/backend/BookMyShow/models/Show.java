@@ -1,4 +1,8 @@
 package com.backend.BookMyShow.models;
 
-public class Show {
+import jakarta.persistence.Entity;
+
+@Entity
+public class Show extends BaseModel{
+
 }

@@ -1,4 +1,5 @@
 package com.backend.BookMyShow.models;
 
-public class BookingStatus {
+public enum BookingStatus {
+    BOOKED,
 }

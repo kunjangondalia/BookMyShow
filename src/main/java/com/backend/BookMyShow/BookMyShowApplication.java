@@ -2,14 +2,14 @@ package com.backend.BookMyShow;
 
 import com.backend.BookMyShow.models.BaseModel;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@EnableAutoConfiguration
 public class BookMyShowApplication {
 
 	public static void main(String[] args) {
-		BaseModel baseModel = new BaseModel();
-
 		SpringApplication.run(BookMyShowApplication.class, args);
 	}
 
