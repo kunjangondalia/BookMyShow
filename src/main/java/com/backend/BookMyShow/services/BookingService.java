@@ -1,10 +1,10 @@
 package com.backend.BookMyShow.services;
 
 import com.backend.BookMyShow.models.*;
-import com.backend.BookMyShow.respositories.BookingRepository;
-import com.backend.BookMyShow.respositories.ShowRepository;
-import com.backend.BookMyShow.respositories.ShowSeatRepository;
-import com.backend.BookMyShow.respositories.UserRepository;
+import com.backend.BookMyShow.repositories.BookingRepository;
+import com.backend.BookMyShow.repositories.ShowRepository;
+import com.backend.BookMyShow.repositories.ShowSeatRepository;
+import com.backend.BookMyShow.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;

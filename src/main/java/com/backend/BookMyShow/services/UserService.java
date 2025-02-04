@@ -1,8 +1,7 @@
 package com.backend.BookMyShow.services;
 
 import com.backend.BookMyShow.models.User;
-import com.backend.BookMyShow.respositories.UserRepository;
-import lombok.Setter;
+import com.backend.BookMyShow.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.backend.BookMyShow.respositories;
+package com.backend.BookMyShow.repositories;
 
 import com.backend.BookMyShow.models.Booking;
 import org.springframework.data.jpa.repository.JpaRepository;
