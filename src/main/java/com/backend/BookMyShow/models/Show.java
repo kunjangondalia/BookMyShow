@@ -1,8 +1,6 @@
 package com.backend.BookMyShow.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,6 +14,13 @@ public class Show extends BaseModel{
     private Date time;
     private int duration;
     private Language language;
+    private Date startTime;
+    private Date endTime;
+
+
+    @Enumerated(EnumType.ORDINAL)
+    @ElementCollection
+    private List<Feature> features;
     @ManyToOne
     private Movie movie;
     @ManyToOne

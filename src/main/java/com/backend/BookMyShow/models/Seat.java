@@ -16,4 +16,7 @@ public class Seat extends BaseModel{
     private int columnVal;
     @ManyToOne
     private SeatType seatType;
+
+    @ManyToOne
+    Screen screen;
 }
