@@ -10,12 +10,9 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class BookingController {
-    private BookingService bookingService;
 
     @Autowired
-    BookingController(BookingService bookingService){
-        this.bookingService = bookingService;
-    }
+    private BookingService bookingService;
 
     public BookTicketResponseDTO bookTicket(BookTicketRequestDTO request){
 

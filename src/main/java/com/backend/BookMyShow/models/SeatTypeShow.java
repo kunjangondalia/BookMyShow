@@ -13,7 +13,7 @@ public class SeatTypeShow extends BaseModel{
     @ManyToOne
     private Show show;
 
-    @Enumerated(EnumType.ORDINAL)
+    @ManyToOne
     private SeatType seatType;
     private double price;
 }
